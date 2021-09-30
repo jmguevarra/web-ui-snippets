@@ -1,0 +1,33 @@
+.testi-card .elementor-widget-wrap {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-testimony .testi-card.active .elementor-widget-wrap,
+.flip-testimony .testi-card:hover .elementor-widget-wrap {
+    transform: rotateY(
+180deg);
+}
+
+.testi-image, .testi-flip {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+}
+.testi-flip {
+    transform: rotateY(
+180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 20px);
+}
+.testi-info p {
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+.testi-flip > * {
+    height: 100%;
+}
